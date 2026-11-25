@@ -1,0 +1,42 @@
+AI Resume Analyzer
+==================
+
+This is a quick Python script that checks your PDF resume against a list of common skills for over 250 jobs. It scans the text, compares it with key skills for the role you choose, and tells you what matched and what's missing.
+
+What's inside
+------------
+- main.py: The script you actually run.
+- keywords.py: The dictionary holding all job titles and required skills.
+- requirements.txt: Notes on what you need to run it.
+
+Before you start
+----------------
+You'll need Python 3.8 or newer and the `pypdf` library installed.
+
+Quick Setup
+-----------
+1. Grab the files and open your terminal in the project folder.
+
+2. Set up a virtual environment (optional, but keeps things clean):
+   - Mac/Linux:
+     python3 -m venv venv
+     source venv/bin/activate
+   - Windows:
+     python -m venv venv
+     venv\Scripts\activate
+
+3. Install pypdf:
+   pip install pypdf
+
+How to use it
+-------------
+1. Run main.py:
+   python main.py
+
+2. Pick option 1 from the menu.
+
+3. Drag and drop your PDF resume into the terminal (or paste its full path).
+
+4. Type in your job title (like "software engineer" or "data analyst").
+
+5. The tool will print out your match score along with missing skills so you know what to add to your resume.
